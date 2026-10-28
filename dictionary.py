@@ -53,8 +53,38 @@ Illit_merch = [
         "price" : 29.99,
         "department" : "Music Albums",
         "descrption" : "Hit K-Pop group Illit's third mini album, comes with photocards, stickers, a CD, and posters."
+    },
+    {
+        "name" : "Illit 1st Single Album NOT CUTE ANYMORE(Not Cute edition)",
+        "price" : 34.99,
+        "department" : "Music Album",
+        "description" : "Hit K-Pop group Illit's first single album, comes with photocards, stickers, a CD, and posters."
+    },
+    {
+        "name" : "Illit 4th Mini Album MAMIHLAPINATAPAI(It's Me edition)",
+        "price" : 26.98,
+        "department" : "Music Album",
+        "descrption" : "Hit K-Pop group Illit's fourth mini album, comes with photocards, stickers, a CD, and posters."
     }
 ]
 
 print(Illit_merch[0]["name"])
 print(Illit_merch[0]["price"])
+
+def show_items(itmes):
+    for index, item in enumerate(Illit_merch):
+        print(index, ":", item["name"])
+
+def choose_items():
+    show_items(Illit_merch)
+    x = int(input("What do you want to get?"))
+    for i in range(6):
+        x = input("Would you like to get anything else? If not, type no.")
+        if x == "no":
+            break
+        if x == "yes":
+            print(Illit_merch)
+choose_items()
+
+def recipt(choose_items):
+    
