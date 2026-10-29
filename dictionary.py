@@ -84,7 +84,6 @@ def choose_items():
             break
         if x == "yes":
             print(Illit_merch)
+        print(Illit_merch[x])
 choose_items()
 
-def recipt(choose_items):
-    
