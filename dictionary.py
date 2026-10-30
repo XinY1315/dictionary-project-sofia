@@ -87,3 +87,5 @@ def choose_items():
         print(Illit_merch[x])
 choose_items()
 
+def recipt(items):
+    
