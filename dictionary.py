@@ -75,17 +75,25 @@ def show_items(itmes):
     for index, item in enumerate(Illit_merch):
         print(index, ":", item["name"])
 
+options = list(range(0,4))
+
+shopping_cart = []
 def choose_items():
     show_items(Illit_merch)
-    x = int(input("What do you want to get?"))
+    shopping_cart = options(input("What do you want to get?"))
     for i in range(6):
         x = input("Would you like to get anything else? If not, type no.")
         if x == "no":
             break
         if x == "yes":
-            print(Illit_merch)
-        print(Illit_merch[x])
+            shopping_cart.append(x)
 choose_items()
 
-def recipt(items):
-    
+def recipt(shopping_cart):
+    for i in range(shopping_cart):
+        print(shopping_cart[i])
+        price = price + shopping_cart[i]
+        print(price)
+recipt(shopping_cart)
+
+#watdatmean
