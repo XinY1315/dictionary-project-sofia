@@ -21,8 +21,9 @@
             print(increasing_1)
             print(decreasing_1) """
 
-
+""" 
 def trees(n, h):
+    n = range(2, 2000)
     current_increasing = 1
     current_decreasing = 1
     best_increasing = 0
@@ -40,4 +41,4 @@ def trees(n, h):
             current_increasing = 1
             current_decreasing = 1
 h = [1, 3, 5, 2]
-trees([1, 2, 3, 4, 5], h)
+trees(n, h) """
